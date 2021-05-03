@@ -13,7 +13,7 @@ public class SnakeShape extends JPanel implements ActionListener, KeyListener {
     int n = (int) (Math.random() * 390);
     int m = (int) (Math.random() * 390);
 
-    public TheShapeOfSnake() {
+    public SnakeShape() {
         timer.start();
         addKeyListener(this);
         setFocusable(true);
@@ -112,7 +112,7 @@ public class SnakeShape extends JPanel implements ActionListener, KeyListener {
     }
 
     public static void main(String[] args) {
-        TheShapeOfSnake obj = new TheShapeOfSnake();
+        SnakeShape obj = new SnakeShape();
         obj.paint(null);
         JFrame jf = new JFrame();
         jf.setSize(400, 400);
